@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.jrcc.ai</groupId>
+        <artifactId>ai-backend</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>ai-pay</artifactId>
+    <properties>
+        <ijapy.version>2.9.7</ijapy.version>
+        <enjoy.version>4.3</enjoy.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <alipay-easysdk.version>2.1.0</alipay-easysdk.version>
+        <zxing.version>3.4.1</zxing.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jrcc.ai</groupId>
+            <artifactId>ai-base</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-easysdk</artifactId>
+            <version>${alipay-easysdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>${zxing.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>enjoy</artifactId>
+            <version>${enjoy.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
